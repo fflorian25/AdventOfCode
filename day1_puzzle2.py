@@ -3,7 +3,7 @@ Created on Dec 1, 2022
 
 @author: viennef1
 '''
-with open('input.txt', 'r') as reader:
+with open('input_day1.txt', 'r') as reader:
     line = reader.readline()
     elf=[0]
     
