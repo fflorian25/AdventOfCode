@@ -18,14 +18,11 @@ def extract_figures(file_path):
                             break
                     else:  # increment index by one if no digit or word is found at a place
                         index += 1
-            print(figures)
             if figures:
                 if len(figures) > 1:
                     total += int(str(figures[0]) + str(figures[-1]))  # concatenate first and last figure
-                    print(str(figures[0]) + str(figures[-1]))
                 else:
                     total += int(str(figures[0]) * 2)  # create a double digit number by repeating
-                    print(str(figures[0]) * 2)
     print(f'Total sum of figures: {total}')
 
 # usage
