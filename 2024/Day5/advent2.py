@@ -11,8 +11,8 @@ class Page:
 
         Parameters:
         pageNumber (int): The number of the page.
-        pagesBefore (list): List of page numbers that come before this page.
-        pagesAfter (list): List of page numbers that come after this page.
+        pagesBefore (list): List of page numbers that this page shall come before.
+        pagesAfter (list): List of page numbers that this page shall come after.
         """
         self.pageNumber = pageNumber
         self.pagesBefore = pagesBefore if pagesBefore else []
