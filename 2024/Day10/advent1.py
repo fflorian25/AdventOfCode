@@ -32,7 +32,7 @@ def parse_file(filename):
 # Function to get nines from zero
 def get_nines_from_zero(x, y, array, max_row, max_col):
     """
-    This function calculates the sum of values in the array starting from zero.
+    This function calculates the number of nines reachable from the starting point.
 
     Args:
     x (int): The x-coordinate of the starting point
