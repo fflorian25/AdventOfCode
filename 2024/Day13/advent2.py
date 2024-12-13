@@ -37,7 +37,7 @@ def read_and_parse_file(file_path):
             if prize_match:
                 x_prize = int(prize_match.group(1))
                 y_prize = int(prize_match.group(2))
-                current_group["prize"] = {"X": x_prize, "Y": y_prize}
+                current_group["prize"] = {"X": x_prize + 10000000000000, "Y": y_prize + 10000000000000}
 
             # Every 4 lines, assume the group is complete
             if line_counter % 4 == 0:
@@ -82,7 +82,7 @@ def compute_token(game):
     token = round(A * 3 + B)
 
     if abs(A - round(A)) < 0.01 and abs(B - round(B)) < 0.01:
-        if 0 <= A <= 100 and 0 <= B <= 100:
+        if 0 <= A and 0 <= B :
             #print(f"Token: {token}, A: {A}, B: {B}")
             #print(f"X = {x_target} : {A * a_x + B * b_x}")
             #print(f"Y = {y_target} : {A * a_y + B * b_y}")
